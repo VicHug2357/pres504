@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/serif.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+			<h2>		CLASES DE RELACIÓN</h2>
+		</section>
+					
+				<section>Las clases de relación se refieren a la manera en que las entidades se conectan entre sí. Estas relaciones definen cómo las diferentes tablas de la base de datos se relacionan entre sí y cómo los datos en una tabla están vinculados a los datos en otra.</section>
+				<section>
+					<h2> </h2>
+					<img src="C:\proyectoBD\reveals\reveal.js\Imagenes\Imagen1.png" style="width: 200%; height:auto ;">
+				</section>
+					<section> 
+						<h2>Las clases de relación comunes incluyen:</h2>
+					
+					</section>
+
+					<section>1.	Uno a Uno (1:1)-Una instancia de una entidad en una tabla se asocia con exactamente una instancia de otra entidad en otra tabla.</section>
+
+					<section>2.	Uno a Muchos (1: N) -Una instancia de una entidad en una tabla se asocia con cero o más instancias de otra entidad en otra tabla.</section>
+
+					<section>	3.	Muchos a Uno (N:1) -Muchas instancias de una entidad en una tabla se asocian con una instancia de otra entidad en otra tabla.</section>
+
+					<section>	4.	Muchos a Muchos (N:M) -Muchas instancias de una entidad en una tabla se asocian con muchas instancias de otra entidad en otra tabla.</section>
+						<section>
+							<h2> </h2>
+							<img src="C:\proyectoBD\reveals\reveal.js\Imagenes\Imagen2.png" style="width: 500%; height:auto ;">
+						</section>
+						<section> 
+							<h2>DATOS PERSISTENTES </h2>
+						</section>
+						<section> Son aquellos datos que se mantienen almacenados en la base de datos incluso después de que la aplicación que los creó haya finalizado. Esto significa que los datos persisten en el tiempo y están disponibles para ser recuperados y utilizados en cualquier momento.</section>
+						<section> Ejemplo:
+							Una base de datos de usuarios en una web. Aunque los usuarios puedas cerrar sesión o incluso abandonar el sitio, sus datos de registro permanecerán almacenados en la base de datos hasta que sean eliminados o modificados. </section>
+
+
+							<section>
+								<h2> </h2>
+								<img src="C:\proyectoBD\reveals\reveal.js\Imagenes\Imagen3.png" style="width: 500%; height:auto ;">
+							</section>
+						
+							<section>
+							<h2>DATOS TEMPORALES</h2>
+							</section>
+							<section>Son aquellos datos que son validos durante un periodo específico de tiempo. Estos datos pueden ser relevantes solo para una tarea o evento específico y pueden eliminarse o actualizarse después de que espire su relevancia temporal.</section>
+							<section>Ejemplo:
+								Registro de transacciones financieras en una aplicación bancaria. A media de que pasa el tiempo, algunas transacciones pueden archivarse o eliminarse de la base de datos, mientras que otras pueden mantenerse para futuras referencias o auditorias.
+								</section>
+								<section>
+									<h2> </h2>
+									<img src="C:\proyectoBD\reveals\reveal.js\Imagenes\Imagen4.png" style="width: 500%; height: auto ;">
+								</section>
+
+								
+								<section>
+									<h2>Bibliografias</h2>
+									<p> <a href="https://www.guiaspracticas.com/recuperacion-de-datos/persistencia-de-datos" target="_blank">Persistencia de datos</a> </p>
+									<p> <a href="https://techlib.net/techedu/base-de-datos-temporal/" target="_blank">Base de datos temporal</a> </p>
+									<p> <a href="https://luciamonterorodriguez.com/tipos-de-relaciones-en-bases-de-datos/" target="_blank">Tipos de relaciones en bases de datos</a> </p>
+								</section>
+
+								<section> 
+									<h2>Realizado por:</h2>
+									<h4>Sanchez Hernadez Jesus</h4>
+									<h4>Seviila Hernadez Luis David</h4>
+									<h4>Tolentino Pacheco Lucero</h4>
+									<h4>Yañez Vargas Marisa</h4>
+								</section>
+
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
