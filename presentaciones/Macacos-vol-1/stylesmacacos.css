@@ -1,0 +1,43 @@
+.subt {
+    font-family: "Anta", sans-serif !important;
+    font-size: 72px !important;
+    color: white !important;
+}
+
+.subth2{
+    font-family: "Anta", sans-serif !important;
+    font-size: 50px !important;
+    color: white !important;
+}
+
+.subth3{
+    font-family: "Anta", sans-serif !important;
+    font-size: 30px !important;
+    color: white !important;
+    font-style: italic;
+}
+
+.ord-list {
+    font-family: "Kode Mono", sans-serif !important;
+    font-size: 36px !important;
+    color: white !important;
+    list-style-type: square !important;
+}
+
+.text-theme{
+    font-family: "Kode Mono", sans-serif !important;
+    font-size: 36px !important;
+}
+
+.bgtheme2{
+    background-color: rgb(1, 72, 72);
+    padding: 5%;
+}
+
+.link2{
+    color: white !important;
+}
+
+.link2:hover{
+    color: black !important;
+}
