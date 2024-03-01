@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Macacos Vol-1</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="stylesmacacos.css">
+	</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-transition="convex-in concave-out" >
+                <h3 class="subth2"><p style="color: #0066ff;">¿Qué es el cuerpo de una relación?</p></h3>
+                <div class="text-theme">
+                    <p>Se refiere a la estructura principal que contiene los datos que estan relacionados entre si.</p>
+                    <p>Este consiste en un conjunto desordenado de cero o mas tuplas, indicando que las tuplas no tienen un orden intrinseco.</p>
+                </div>
+            </section>
+            <section data-transition="zoom-in"  id="subthemes">
+                <h3 class="subth2"><p style="color: #0066ff;">Importancia del cuerpo</p></h3>
+                <div class="text-theme">
+                    <p>Es importante por varias razones</p>
+                        <ol>
+                            <li><a href="#subtheme1" class="link2">Almacenamiento de datos</a></li>
+                            <li><a href="#subtheme2" class="link2">Organizacion y estructura</a></li>
+                            <li><a href="#subtheme3" class="link2">Consistencia de los datos</a></li>
+                            <li><a href="#subtheme4" class="link2">Integridad referencial</a></li>
+                            <li><a href="#subtheme5" class="link2">Acceso y manipulacion de datos</a></li>
+                        </ol>
+                </div>
+            </section>
+            <section id="subtheme1" >
+                <div class="text-theme" data-transition="zoom-in fade-out">
+                    <h2 class="subth2"><p style="color: #0066ff;">Almacenamiento</p></h2>
+                    <p>Es el lugar donde se almacenan los datos reales que son relevantes para la aplicacion. Sin este, no hay manera de mantener o recuperar la informacion.</p>
+                    <img src="images/almacenamiento.png" style="width: 20%;">
+                    <div><a href="#subthemes" class="link2">Volver</a></div>
+                </div>	
+            </section>
+            <section id="subtheme2" >
+                <div class="text-theme" data-transition="zoom-in fade-out">
+                    <h3><p style="color: #0066ff;">Organizacion y estructura</p></h3>
+                    <p>Proporciona una organizacion estructurada para los datos, ya que cada fila representa una instancia de la entidad que la relacion describe, mientras las columnas un atributo.</p>
+                    <p>Esto facilita la manipulacion y consulta de datos.</p>
+                    <img src="images/consulta.jpg" style="width: 15%;">
+                    <div><a href="#subthemes" class="link2">Volver</a></div>
+       +
+             </div>	
+            </section>
+            <section id="subtheme3" >
+                <div class="text-theme" data-transition="zoom-in fade-out">
+                    <h3><p style="color: #0066ff;">Consistencia de los datos</p></h3>
+                    <p>Al definir claramente los datos almacenados, el cuerpo de la relacion ayuda a manetner la consistencia, pues facilitala integridad y calidad de los datos.</p>
+                    <img src="images/relacion png.png" style="width: 20%;">
+                    <div><a href="#subthemes" class="link2">Volver</a></div>
+                </div>	
+            </section>
+            <section id="subtheme4" >
+                <div class="text-theme" data-transition="zoom-in fade-out">
+                    <h3><p style="color: #0066ff;">Integridad referencial</p></h3>
+                    <p>El cuerpo de la relacion asegura que las relaciones se mantengan correctamente, garantizando esta integridad.</p>
+                    <img src="images/integridad.png" style="width: 20%;">
+                    <div><a href="#subthemes" class="link2">Volver</a></div>
+                </div>	
+            </section>	
+            <section id="subtheme5" >
+                <div class="text-theme" data-transition="zoom-in fade-out">
+                    <h3><p style="color: #0066ff;">Acceso y manipulacion de datos</p></h3>
+                    <p>Es importante saber que casi todas las operaciones de consulta y modificacion de datos se realizan directamente desde el cuerpo, ya que es el punto de acceso principal.</p>
+                    <img src="images/accdatos.png" style="width: 20%;">
+                    <div><a href="#subthemes" class="link2">Volver</a></div>
+                </div>	
+            </section>
+            <section data-transition="zoom-in fade-out" >
+                <h3 class="subth2"><p style="color: #0066ff;">Ejemplo Cuerpo:</style></h3>
+                <h4 class="text-theme">Siguiendo el ejemplo anterior: </h4>
+                <ul type= "circle" class="text-theme">
+                    <li>Cada fila del cuerpo de la relación representaría un empleado con su respectiva información en las columnas especificadas.</li>
+                </ul>
+                <div class="text-theme"><a href="macacosss.html#theme0"><img src="images/iconhome.webp" style="width: 10%;"></a></div>
+            </section>
+        </div>
+    </div>
+    </section>
+    <script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Macacos Vol-1</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="stylesmacacos.css">
+	</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-transition="convex-in concave-out" >
+                <h3 class="subth2"><p style="color: #0066ff;">¿Qué es el esquema de la relación?</p></h3>
+                <div class="text-theme">
+                    <p>Es la estructura logica que describe la organizacion de los datos en una base relacional.</p>
+                    <p>Define como se organiza la informacion en tablas, especificando los campos o atributos que cada tabla contiene y su relacion entre estas.</p>
+                </div>
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3 class="subt"><p style="color: #0066ff;">¿Qué lo caracteriza?</style></h3>
+                <div class="text-theme">
+                    <p>Su nombre, un conjunto de atributos y una coleccion de dominios.</p>
+                    <p>Ademas, cabe recalcar que se puede expresar utilizando notacion matematica, transmitiendo el proposito y sus restricciones</p>
+                </div>
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3 class="subt"><p style="color: #0066ff;">Elementos de esquema de la relacion</style></h3>
+                <div class="text-theme">
+                        <ol style="font-size: 20px;">
+                            <li><a href="#" class="link2">Nombre de la tabla</a></li>
+                            <li><a href="#" class="link2">Atributos o campos</a></li>
+                            <li><a href="#datatypes" class="link2">Tipos de datos</a></li>
+                            <li><a href="#restrictions" class="link2">Restricciones de integridad</a></li>
+                        </ol>
+                </div>
+                <div class="text-theme"><img src="images/diagrama.png" style="width: 30%;"></div>
+            </section>
+            <section id="datatypes">
+                <div class="text-theme" data-transition="fade-out">
+                    <h2 class="subt"><p style="color: #0066ff;">Tipos de datos</p></h2>
+                    <p>Aunque hay bastantes tipos de datos, entre los mas usados podemos encontrar:
+                    </p>
+                    <ol style="font-size: 20px;">
+                        <li>Integer o INT: Numeros enteros</li>
+                        <li>Decimal/Float o FLOAT/NUMERIC/DECIMAL: Numeros con decimales</li>
+                        <li>String/Char o CHAR/VARCHAR: Cadenas de caracteres</li>
+                        <li>DATE o TIME o DATETIME: Fechas, horas o ambas</li>
+                        <li>BOOLEAN: True o False</li>
+                        <li>BINARY: Archivos binarios como imagenes o archivos</li>
+                        <li>ENUM: Varios valores predefinidos por uno mismo</li>
+                        <li>JSON: Datos en forma JSON para apps web o moviles</li>
+                        <li>XML: Formato de intercambio de datos para aplicaciones web u otros</li>
+                    </ol>
+                    <div><a href="#subthemes" class="link2">Volver</a></div>
+                </div>	
+            </section>
+            <section id="restrictions">
+                <div class="" data-transition="fade-out">
+                    <h3 class="subt"><p style="color: #0066ff;">Restricciones</p></h3>
+                    <p>Son reglas que aplican a los datos alamcenados una precision, coherencia e integridad</p>
+                    <ol style="font-size: 20px;">
+                        <li>PK o Primary Key: Identifica de forma unica cada fila en una tabla</li>
+                        <li>FK o Foreign Key: Llave que viene de otra tabla como PK</li>
+                        <li>NN o NOTNULL: Asegura que un campo no pueda contener valores nulos</li>
+                        <li>U o UNIQUE: Asegura que todos los valores en una columna sean unicos</li>
+                        <li>CH o CHECK: Permite especificar una condicion que debe cupmlirse para los valores en una columna</li>
+                        <li>DC o DEFAULT CONSTRAINT: Establece un valor predeterminado para una columna cuando no se proporciona un valor durante la inserción de datos</li>
+                        <li>EIC o ENTITY INTREGITY CONSTRAINT: Se refiere a la combinación de claves primarias y restricciones NOT NULL para garantizar que cada fila en una tabla sea única y que ningún valor clave sea nulo.</li>
+                    </ol>
+                    <div><a href="#relation" class="link2">Siguiente</a></div>
+                </div>	
+            </section>
+            <section id="relation">
+                <div class="" data-transition="fade-out">
+                    <h3 class="subt"><p style="color: #0066ff;">Tipos de relaciones</p></h3>
+                    <img src="images/relaciones.png" style="width: 100%;">
+                </div>	
+            </section>
+            <section id="exclsuive">
+                <div class="" data-transition="fade-out">
+                    <h3 class="subth2"><p style="color: #0066ff;">Especificidad Muchos a Muchos</p></h3>
+                    <p style="font-size: 30px;">Cuando se trata de una relacion muchos a muchos, es mas complicado a diferencia del resto, pues para este caso se debe agregar una tabla en la cual se agregan FK de ambas para determinar su relacion.</p>
+                    <img src="images/esp.png" style="width: 50%;">
+                </div>	
+            </section>
+            <section data-transition="zoom-in fade-out">
+                <h3 class="subth2"><p style="color: #0066ff;">Ejemplo Esquema:</p></h3>
+                    <div class="text-theme">
+                        <h4 class="text-theme">Nombre de la relación: Empleados</h4>
+                        <h4 class="text-theme">Atributos (cabecera de la relación):</h4>	
+                        <ol>
+                            <li>ID_empleado (clave primaria)</li>
+                            <li>Nombre</li>
+                            <li>Apellido</li>
+                            <li>Departamento</li>
+                            <li>Cargo</li>
+                            <li>Salario</li>
+                        </ol>
+                    </div>
+                
+            </section>
+                <section data-transition="zoom-in fade-out">
+                    <h3 class="subth2"><p style="color: #0066ff;">Ejemplo Esquema:</p></h3>
+                        <div class="text-theme">
+                            <h4 class="text-theme">Restricciones de integridad:</h4>	
+                            <ul type= "circle" style="font-size: 25px;">
+                            <li>Clave primaria: ID_empleado</li>
+                            <li>Restricción de unicidad: No puede haber dos empleados con el mismo ID_empleado.</li>
+                            <li>Restricciones de tipo de datos: </li> 
+                                <ul type= "circle">
+                                <li>El ID_empleado puede ser un número entero.</li> 
+                                <li>El nombre y apellido son cadenas de caracteres.</li> 
+                                <li>El salario puede ser un número decimal.</li>
+                                </ul>
+                            </ul>
+                        </div>
+
+                <div class="text-theme"><a href="macacosss.html#theme0"><img src="images/iconhome.webp" style="width: 10%;"></a></div>
+            </section>	
+        </div>
+    </div>
+    </section>
+    <script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+</body>
+</html>
