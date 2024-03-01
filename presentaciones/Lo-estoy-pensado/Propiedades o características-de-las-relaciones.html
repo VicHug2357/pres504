@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="zoom">
+					<h2>𝙋𝙍𝙊𝙋𝙄𝙀𝘿𝘼𝘿𝙀𝙎 𝙊 𝘾𝘼𝙍𝘼𝘾𝙏𝙀𝙍𝙄́𝙎𝙏𝙄𝘾𝘼𝙎 𝘿𝙀 𝙇𝘼𝙎 𝙍𝙀𝙇𝘼𝘾𝙄𝙊𝙉𝙀𝙎</h2>
+					<h4> </h4>
+					<h4 class="fragment fade-up">Angel Manuel Ruiz Herrera</h4>
+					<h4 class="fragment fade-down">Diego Alexis Rodríguez Pérez</h4>
+					<h4 class="fragment fade-up">Diego Pérez Melo</h4>
+					
+				</section>
+
+				<section>
+					<section data-background="#553d2a">
+						<h3>"Conjunto de operadores que se aplican a las relaciones"</h3>
+					<h5>
+					Los operadores que se aplican a las relaciones en el contexto de bases de datos y álgebra relacional son fundamentales para manipular y consultar datos. </h5>
+					</section>
+				</section>
+				<section data-transition="zoom-in fade-out">
+					<section data-background="#553d2a">
+						<h3>OPERADORES</h3>
+						<ul>
+							<li class="fragment fade-left">Selección</li>
+							<li class="fragment fade-right">Proyección</li>
+							<li class="fragment fade-left">Unión</li>
+							<li class="fragment fade-right">Intersección</li>
+						</ul>
+					</section>
+					
+						
+						
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Símbolo de operadores</h2>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">(σ)</div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">(π)</div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">(⋃)</div>
+						<div data-id="box4" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">(⋂)</div>
+					</div>
+				</section>
+				<section>
+					<section id= "simbols" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+						<div class="r-hstack justify-center">
+							<div data-id="box1" data-auto-animate-delay="0" style="background: white; width: 80px; height: 80px; margin: 10px;"><a href="#/selec">(σ)</a></div>
+							<div data-id="box2" data-auto-animate-delay="0.1" style="background: white; width: 80px; height: 80px; margin: 10px;"><a href="#/proyec">(π)</a></div>
+							<div data-id="box3" data-auto-animate-delay="0.2" style="background: white; width: 80px; height: 80px; margin: 10px;"><a href="#/uni">(⋃)</a></div>
+							<div data-id="box4" data-auto-animate-delay="0.3" style="background: white; width: 80px; height: 80px; margin: 10px;"><a href="#/inter">(⋂)</a></div>
+						</div>
+					</section>
+					<section id="selec">
+						<h1></h1>
+						<h3>Selección</h3>
+						<p>Permite seleccionar un subconjunto de tuplas que satisfagan una condición especificada.</p>
+						<h3></h3>
+						<a href="#/simbols">volver</a>
+					</section>
+					<section id="proyec">
+						<h1></h1>
+						<h3>Proyección</h3>
+						<p>Selecciona ciertas columnas de una tabla mientras descarta las demás.</p>
+						<h3></h3>
+						<a href="#/simbols">volver</a>
+					</section>
+					<section id="uni">
+						<h1></h1>
+						<h3>Unión</h3>
+						<p>Combina dos relaciones que tienen el mismo esquema, produciendo una relación que contiene todas las tuplas de ambas relaciones, eliminando duplicados.</p>
+						<h3></h3>
+						<a href="#/simbols">volver</a>
+					</section>
+	
+					<section id="inter">
+						<h1></h1>
+						<h3>Intersección</h3>
+						<p>Devuelve todas las tuplas que están presentes en ambas relaciones.</p>
+						<h3></h3>
+						<a href="#/simbols">volver</a>
+					</section>
+				</section>
+				<section>
+					<section id= "simbols2" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+						<div class="r-hstack justify-center">
+							<div data-id="box1" data-auto-animate-delay="0" style="background: white; width: 120px; height: 110px; margin: 10px;"><a href="#/dif">(−)</a></div>
+							<div data-id="box2" data-auto-animate-delay="0" style="background: white; width: 120px; height: 110px; margin: 10px;"><a href="#/produ">(×)</a></div>
+							<div data-id="box3" data-auto-animate-delay="0" style="background: white; width: 120px; height: 110px; margin: 10px;"><a href="#/join">(⨝)</a></div>
+							<div data-id="box4" data-auto-animate-delay="0" style="background: white; width: 120px; height: 110px; margin: 10px;"><a href="#/divis">(÷)</a></div>
+						</div>
+					</section>
+					<section id="dif">
+						<h1></h1>
+						<h3>Diferencia</h3>
+						<p>Devuelve todas las tuplas que están presentes en una relación pero no en la otra.</p>
+						<h3></h3>
+						<a href="#/simbols2">volver</a>
+					</section>
+					<section id="produ">
+						<h1></h1>
+						<h3>Producto cartesiano</h3>
+						<p>Combina cada tupla de la primera relación con cada tupla de la segunda relación, generando una nueva relación.</p>
+						<h3></h3>
+						<a href="#/simbols2">volver</a>
+					</section>
+					<section id="join">
+						<h1></h1>
+						<h3>Join </h3>
+						<p>Combina tuplas de dos relaciones basándose en una condición de igualdad entre valores de atributos.</p>
+						<h3></h3>
+						<a href="#/simbols2">volver</a>
+					</section>
+	
+					<section id="divis">
+						<h1></h1>
+						<h3>División</h3>
+						<p>Devuelve los valores que están en una relación, pero no están en otra relación.</p>
+						<h3></h3>
+						<a href="#/simbols2">volver</a>
+					</section>
+				</section>
+				<section data-transition="convex-in concave-out">
+					<section data-background="#553d2a">
+						<h2>DOMINIO "D"</h2>
+					<h6>Un dominio D se refiere al conjunto de valores que pueden tomar los atributos de una relación. Es decir, especifica el conjunto de valores que son válidos para un atributo en particular.  </h6>
+					</section>
+					
+					
+				</section>
+				</section>
+				<section data-transition="concave">
+					<section data-background="#553d2a">
+						<h2>EJEMPLO 1</h2>
+					<h2></h2>
+					<h6>Si tienes una relación de empleados, podrías tener un atributo "edad" con un dominio D que incluye valores enteros no negativos. Del mismo modo, podrías tener un atributo "nombre" con un dominio que incluye cadenas de caracteres de longitud limitada.  </h6>
+					</section>
+					<section id="ej2">
+						<h4>EJEMPLO 2</h4>
+						<h6></h6>
+						<h8>Puede que necesite enmascarar todas las instancias de números de la seguridad social con la <a href="#/enmas">regla de enmascaramiento</a> .Se puede crear un dominio de datos que describa los datos de la seguridad social que aparecen en distintas columnas. Una base de datos podría tener un número de la seguridad social en una columna llamada SSN. La base de datos también tiene una columna llamada SOCIAL_SECURITY en otra tabla. Un número de la seguridad social también podría aparecer en una columna COMMENTS.</h8>
+					</section>
+					<section id="enmas">
+						<p>Configure dominios de datos para agrupar columnas de origen de datos para el enmascaramiento de datos.</p>
+						<p><a href="#/ej2">regresar</a></p>
+					</section>	
+				</section>
+				
+				</section>
+				<section data-transition="convex-in fade-out">
+				<section data-background="#553d2a">
+				<h2></h2>
+				<h4>Ejemplo de aplicación</h4>
+				<h5></h5>
+				<h6>Supongamos que estás creando una base de datos para una tienda en línea que vende productos electrónicos. En esta base de datos, tendrás una tabla llamada «Productos» que incluye un campo llamado «Categoría«. El dominio de este campo podría ser un conjunto de valores, como «Teléfonos móviles«, «Tabletas«, «Accesorios«, etc. Cada producto en la tabla tendrá un valor en el campo «Categoría» que se ajuste a este dominio.</h6>
+					</section>	
+
+
+				</section>
+				<section data-transition="convex-in fade-out">
+				<section data-background="#553d2a">
+				<h2>TIPOS DE DOMINIOS</h2>
+				<h4>Dominios por Intención (o definición):</h4>
+				<h6>En este enfoque, el dominio se define mediante una descripción o una regla que determina qué valores son válidos para un atributo. Los valores pueden no estar explícitamente enumerados, pero se describen mediante una fórmula o una regla.
+					<h6></h6>
+					<h5>Ejemplo:</h5>
+					<h6></h6>
+					<h6>Dominio de Edad: Todos los números enteros mayores o iguales que cero y menores que 150 son válidos para representar edades.</h6>
+					</section>
+				
+				</section>
+			</section>
+
+
+				</section>
+				<section data-transition="zoom">
+					<section data-background="#553d2a">
+						<h3>Dominios por Extensión:</h3>
+					<h6>Aquí, el dominio se especifica enumerando todos los posibles valores válidos para el atributo. Es una lista explícita de valores que pueden tomar los atributos.</h6>
+
+						<h3>Ejemplo:</h3>
+			
+						<h6>Dominio de Género: {Masculino, Femenino, No binario, Otro}</h6>
+					</section>
+					
+					
+				</section>
+				<section>
+					<section>
+						<h2>Más Ejemplificado... </h2>
+					</section>
+					<section data-background="#553d2a">
+						<h2>Dominio por Intensión:</h2>
+						<h4>El conjunto de números enteros mayores que 10</h4>
+					</section>
+					<section data-background="#553d2a">
+						<h2>Dominio por Extensión:</h2>
+						<h4>El conjunto {1,2,3,4,5}</h4>
+					</section>
+				</section>
+				<section data-background="white">
+				  <h1>_GRACIAS_</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

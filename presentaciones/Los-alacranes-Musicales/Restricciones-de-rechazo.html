@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion: Restricciones de Rechazo en Bases de Datos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/theme/white.min.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Restricciones de Rechazo en Bases de Datos</h1>
+            </section>
+
+            <section>
+                <h2>Verificación</h2>
+                <ul>
+                    <li><strong>Definición:</strong> Las restricciones de verificación se utilizan para garantizar que los datos en una base de datos cumplan ciertas condiciones.</li>
+                    <li><strong>Ejemplo:</strong> En una tabla de empleados, una restricción de verificación podría ser que la edad de un empleado debe ser mayor de 18 años.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Aserción</h2>
+                <ul>
+                    <li><strong>Definición:</strong> Las restricciones de aserción son condiciones lógicas que se aplican a nivel de fila o tabla completa para garantizar la integridad de los datos.</li>
+                    <li><strong>Ejemplo:</strong> En una tabla de estudiantes, una restricción de aserción podría ser que la suma de las calificaciones de todas las asignaturas no debe exceder 100.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Ejemplos</h2>
+                <section>
+                    <h3>Restricción de Verificación</h3>
+                    <pre><code class="language-sql">CREATE TABLE Empleados (
+    ID INT PRIMARY KEY,
+    Nombre VARCHAR(50),
+    Edad INT CHECK (Edad &gt; 18),
+    Departamento VARCHAR(50)
+);</code></pre>
+                </section>
+                <section>
+                    <h3>Restricción de Aserción</h3>
+                    <pre><code class="language-sql">CREATE TABLE Estudiantes (
+    ID INT PRIMARY KEY,
+    Nombre VARCHAR(50),
+    Matematicas INT,
+    Ciencias INT,
+    Ingles INT,
+    CONSTRAINT Suma_Calificaciones CHECK (Matematicas + Ciencias + Ingles &lt;= 100)
+);</code></pre>
+                </section>
+            </section>
+
+            <section>
+                <h2>Conclusiones</h2>
+                <ul>
+                    <li>Las restricciones de rechazo son fundamentales para mantener la integridad de los datos en una base de datos.</li>
+                    <li>La verificación y la aserción son dos tipos comunes de restricciones de rechazo.</li>
+                    <li>Es importante diseñar cuidadosamente estas restricciones para garantizar la consistencia y la precisión de los datos.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
+</body>
+
+</html>
