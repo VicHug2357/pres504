@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../../dist/reset.css">
+		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="brown">
+					<section>
+						<h2>Valores Nulos</h2>
+					</section>
+					<section>
+						<h2>Valores Nulos</h2>
+						<p>Los valores nulos en una base de datos se refieren a la ausencia de datos en una determinada columna o campo. Estos valores nulos pueden surgir por diversas razones y es importante gestionarlos correctamente para asegurar la integridad y la calidad de los datos.</p>
+					</section>
+					<section>
+						<h2>Tratamiento de valores nulos</h2>
+						<p>El tratamiento de valores nulos en una base de datos implica diversas estrategias y técnicas para garantizar la integridad y consistencia de los datos. Aquí hay algunas prácticas comunes para el tratamiento de valores nulos:</p>
+					</section>
+					<section>
+						<h3>Reunión</h3>
+						<p>Las reuniones se pueden expresar como un producto cartesiano seguido de una selección.
+							La definición de la forma en la cual la selección trata los nulos también define la forma en que la operación reunión trata los nulos.
+							En una reunión natural, si dos tuplas tienen valor nulo en el atributo común, las tuplas no enlazan.</p>
+					</section>
+					<section>
+						<h3>Ejmplo</h3>
+						<p>Considérese las siguientes relaciones:</p>
+						<img src="http://3.bp.blogspot.com/-9TZNVkJm0A4/UKQ-wWfvktI/AAAAAAAAAFI/VxL1XCqGDrM/s1600/tmp.bmp" style="width: 40%;">
+						<p></p>
+						<img src="http://3.bp.blogspot.com/-oSNoBPAJ_CE/UKQ5y7QkAZI/AAAAAAAAAEg/eis_3FW7FrI/s1600/tmp.bmp" style="width: 50%;">
+					</section>
+					<section>
+						<p>De las relaciones anteriores se aplican las operaciones de reunión descritas en la imagen:</p>
+						<img src="http://3.bp.blogspot.com/-WA4yuR2QVX8/UKQ7P5ybQII/AAAAAAAAAE4/MSRjHQ5KLwY/s1600/tmp.bmp" style="width: 90%;">
+						<img src="http://2.bp.blogspot.com/-ADNveQbM_PU/UKRQrnMhG1I/AAAAAAAAAGg/YGIRFwtR0Pc/s1600/tmp.bmp" style="width: 90%;">
+					</section>
+					<section>
+						<h3>Proyeccion generalizada</h3>
+						<p>Los nulos en las expresiones de los atributos en la proyección generalizada se tratan como en cualquier expresión.</p>
+						<p>Las tuplas duplicadas que contienen valores nulos se tratan como en la operación proyección (trata los nulos como cualquier otro valor al eliminar duplicados, aunque la decisión es un tanto arbitraria porque sin saber cuál es el valor real no se sabe si los dos valores nulos son duplicados o no).
+						</p>
+					</section>
+					<section>
+						<h3>Ejemplo</h3>
+						<p>Considérese la misma relación Producto y una nueva relación Cliente compras con un nuevo atributo Descuento (%):</p>
+						<img src="http://2.bp.blogspot.com/-juDbKa0fu5Y/UKRLiY1xYFI/AAAAAAAAAGI/U2LkHKWh6qA/s1600/tmp.bmp" style="width:60%;">
+					</section>
+					<section>
+						<p>A las que se le aplican operaciones de proyección generalizada:</p>
+						<img src="http://2.bp.blogspot.com/-pYNw_SM4axc/UKRHNp1l-fI/AAAAAAAAAFw/2_oZqV-2pFs/s1600/tmp.bmp" style="width: 40%;">
+						<img src="http://1.bp.blogspot.com/-ecoowRoiNGA/UKRNO6CLb4I/AAAAAAAAAGQ/CCpW-mBgPUI/s1600/tmp.bmp" style="width: 40%;">
+					</section>
+					<section>
+						<h3>Funciones de agregación</h3>
+						<p>Cuando hay nulos en atributos agregados, la operación borra los valores nulos del resultado antes de aplicar la agregación.</p>
+						<p>El tratamiento de los valores nulos aquí es diferente al realizado en las operaciones aritméticas <- aplicarlo como en las operaciones aritméticas significaría que un único valor desconocido en un gran grupo podría hacer que el resultado agregado sobre el grupo fuese nulo, y se perdería una gran cantidad de información útil.</p>
+					</section>
+					<section>
+						<h3>Ejemplos</h3>
+						<img src="http://2.bp.blogspot.com/-uUpZ8W89ocw/UKgV7Y-qK_I/AAAAAAAAAG0/c3lP0HbmIrQ/s1600/ej1.bmp" style="width: 60%;">
+						<img src="http://4.bp.blogspot.com/-TJmkCOau2yY/UKgV9CPgScI/AAAAAAAAAG8/K2tP94Vyv_k/s1600/ej2.bmp" style="width: 60%;">
+					</section>
+					<section>
+						<h3>Reunión externa</h3>
+						<p>Las operaciones de reunión externa se comportan como las operaciones de reunión, excepto sobre las tuplas que no aparecen en el resultado.</p>
+					</section>
+					<section>
+						<h3>Ejemplos</h3>
+						<img src="http://2.bp.blogspot.com/-Cw0fUjHDcpA/UKgV_jAYmkI/AAAAAAAAAHE/0sEgHSA9LeQ/s1600/ej0.bmp" style="width: 70%;">
+						<img src="http://2.bp.blogspot.com/-cMI84vIXyK4/UKRBVa2AWuI/AAAAAAAAAFY/8Tie8uDv60o/s1600/tmp.bmp" style="width: 70%;">
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

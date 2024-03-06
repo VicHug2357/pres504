@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../../dist/reset.css">
+		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+<body>
+    <h1>Restricciones</h1>
+</body>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="zoom">
+					<h2>RESTRICCIONES</h2>
+					<h4>INTEGRANTES:</h4>
+					<ul>
+						<li>Hurtado Vega Maria Estephania</li>
+						<li>Badillo Gonzalez Ambar</li>
+						<li>Trejo Romo Adriana</li>
+						<li>Gonzalez Castro Elizabeth</li>
+					</ul>
+
+				</section>
+
+				<section data-transition>
+					<H2>RESTRICCIONES</H2>
+					<h4>Temas:</h4>
+					<div>
+						<ol>
+							<li>Restricciones inherentes al modelo relacional</li>
+							<li>Restricciones semánticas</li>
+							<li >Operación restringida(restric)</li>
+							<li >Operación con transmisión en cascada(cascade)</li>
+							<li>Operación con puesta a nulos(set null)</li>
+					<li>Operación con puesta a valor por defecto</li>
+							</ol>
+						</div>
+				</section>
+
+				<section data-transition="zoom">
+					<h3 >¿Que son las restricciones?</h3>
+					<section><div>Son reglas y condiciones que se aplican a los datos almacenados para garantizar su integridad, consistencia y validez</div></section>
+				</section>
+
+				<section data-transition="zoom">
+					<h3>Restricciones inherentes al modelo relacional</h3>
+				</section>
+
+				<section data-transition>
+					<div>Son reglas predefinidas que se aplican a las tablas de una base de datos relacional para garantizar la integridad y consistencia de los datos. Estas restricciones ayudan a mantener la calidad de la información almacenada y a prevenir inconsistencias o errores en la base de datos.</div>
+				</section>
+
+				<section data-transition="zoom">
+					<H3>Tipos y Ejemplos</H3>
+					<div>
+						<ol>
+							<li><h4>Restricción de Integridad Referencial:</h4> Esta restricción asegura que las relaciones entre tablas sean coherentes. Por ejemplo, en una tabla de "Pedidos", la columna de "ID de Cliente" solo puede contener valores que existan en la tabla de "Clientes". Esto evita que se hagan pedidos para clientes que no están registrados en la base de datos.</li>
+						</ol>
+					</div>
+				</section>
+
+				<section data-transition>
+					<h3>2.Restricción de Unicidad:</h3>
+				<div>Esta restricción asegura que los valores en una columna específica de una tabla sean únicos. Por ejemplo, En una tabla de "Productos", la columna de "Número de Serie" no puede tener el mismo número en más de un producto. Esto asegura que cada producto tenga un número de serie único.</div>
+				</section>
+
+				<section data-transition>
+					<h3>3.Restricción de Clave Primaria:</h3>
+					<div>Esta restricción identifica de manera única cada fila en una tabla y garantiza que los valores de la clave primaria no puedan ser nulos ni duplicados. Por ejemplo, En una tabla de "Empleados", la columna de "ID de Empleado" actúa como clave primaria, asegurando que cada empleado tenga un identificador único.</div>
+				</section>
+
+				<section data-transition>
+					<h3>4.Restricción de Clave Externa:</h3>
+					<div>Esta restricción garantiza la consistencia en las relaciones entre tablas al asegurar que los valores en una columna que hace referencia a una clave primaria en otra tabla sean válidos. Por ejemplo, En una tabla de "Detalle de Pedido", la columna de "ID de Producto" debe coincidir con un producto existente en la tabla de "Productos". Esto garantiza que solo se puedan hacer pedidos de productos que estén en el inventario.</div>
+				</section>
+
+				<section data-transition>
+					<h3>Conclusion</h3>
+					<div>Las restricciones inherentes del modelo relacional son reglas fundamentales que se aplican a las tablas de una base de datos relacional para mantener la integridad y coherencia de los datos almacenados.</div>
+				</section>
+
+				<section data-transition="zoom">
+					<h3>RESTRICCIONES SEMANTICAS</h3>
+				</section>
+
+				<section data-transition>
+					<div>Las restricciones semanticas se refieren a reglas que se aplican al significado de los datos almacenados en la base de datos.</div>
+					<div>Estas restricciones garantizan la integridad de los datos y ayudan a mantener la consistencia y la calidad de la infomacion almacenada.</div>
+					<div>Estas restricciones se dividen en:</div>
+				</section>
+				
+				<section data-transition>
+					<h3>1. RESTRICCION DE CLAVE PRIMARIA (PRIMARY KEY).</h3>
+					<div>Permite declarar un atributo o conjunto de atributos como la clave primaria de una relación.</div>
+
+				</section>
+				
+				<section data-transition>
+					<h3>2. RESTRICCION DE UNIDAD (UNIQUE).</h3>
+					<div>Permite que una clave alternativa o secundaria pueda tomar valores únicos para las tuplas de una relación (como si de una clave primaria se tratara).</div>
+				</section>
+
+				<section data-transition>
+					<h3>3. RESTRICCION DE OBLIGATORIEDAD (NOT NULL).</h3>
+					<div>Permite declarar si uno o varios atributos de una relación, esta debe tomar siempre un valor.</div>
+				</section>
+
+				<section data-transition>
+					<h3>4. RESTRICCION DE INTEGRIDAD REFERENCIAL O DE CLAVE FORANEA (FOREING KEY).</h3>
+					<div>Se utiliza para que mediante claves foráneas podamos enlazar relaciones de una base de datos. La integridad referencial nos indica que si una relación tiene una clave foránea que referencia a otra relación, cada valor de la clave foránea o ajena tiene que ser igual a un valor de la clave principal de la relación a la que referencia, o bien, ser completamente nulo. </div>
+				</section>
+
+				<section data-transition>
+					<h3>5. RESTRICCION DE VALOR POR DEFECTO (DEFAULT).</h3>
+					<div>Permite que cuando se inserte una tupla o registro en una tabla, en aquellos atributos para los cuales no se indique un valor exacto se les asigne un valor por defecto.</div>
+				</section>
+				<section data-transition>
+					<h3>6. RESTRICCION DE VERIFICACION O CHEQUEO (CHECK).</h3>
+					<div>En algunos casos puede ocurrir que sea necesario especificar una condición que deben cumplir los valores de determinados atributos de una relación de la BD, aparte de las restricciones vistas anteriormente.</div>
+				</section>
+
+				<section data-transition>
+					<h3>7. ASERCIONES (ASSERTION).</h3>
+					<div>Esta restricción generaliza a la anterior, lo forman las aserciones en las que la condición se establece sobre elementos de distintas relaciones (por ello debe tener un nombre que la identifique).</div>
+				</section>
+
+				<section data-transition>
+					<h3>8. DISPARADORES (TRIGGERS).</h3>
+					<div>Los disparadores pueden interpretarse como reglas del tipo evento-condición-acción (ECA) que pueden interpretarse como reglas que especifican que cuando se produce un evento, si se cumple una condición, entonces se realiza una determinada acción.</div>
+				</section>
+
+				<section data-transition>
+					<h3>EJEMPLO</h3>
+					<div>Se tiene una tabla llamada "PRODUCTOS" con las siguientes columnas:</div>
+					<div>-ID_producto</div>
+					<div>-Nombre</div>
+					<div>-Precio</div>
+					<div>-Stock</div>
+					<div>Para asegurar que el precio de un producto sea mayor que cero, se puede aplicar la sexta restriccion (CHECK constraint) en la columna precio.</div>
+				</section>
+
+				<section data-transition>
+					<div>Esta restriccion garantiza que solo se puedan insertar o actualizar valores positivos en la columna "precio" de la tabla "PRODUCTOS", lo que asegura la integridad de los datos.</div>
+				</section>
+
+				<section data-transition="zoom">
+					<h3>Operación restringida (restrict)</h3>
+				</section>
+				<section data-transition>
+					<div>Es el comportamiento por defecto, que impide realizar modificaciones que atentan contra la integridad referencial. El comportamiento por defecto de una restricción de clave externa es impedir un cambio en la base de datos como consecuencia de una sentencia DELETE o UPDATE, si esta trajese como consecuencia un fallo de la integridad referencial.</div>
+				</section>
+
+				<section data-transition>
+					<h3>Ejemplo</h3>
+					<img src="https://i.stack.imgur.com/Q9yWS.png" style="width: 9;">
+				</section>
+
+				<section data-transition="zoom">
+					<h3>Operación con transmisión en cascada (cascade)</h3>
+				</section>
+				<section data-transition>
+					<div>Borra los registros de la tabla dependiente cuando se borra el registro de la tabla principal, o actualiza el valor de la clave secundaria cuando se actualiza el valor de la clave referenciada</div>
+				</section>
+				<section data-transition>
+					<h3>Ejemplo</h3>
+					<img src="https://i.stack.imgur.com/9V8Lp.png">
+				</section >
+
+				<section data-transition="zoom">
+					<h3>OPERACIÓN CON PUESTA A NULOS</h3>
+					<h4>(set null)</h4>
+				</section>
+				<section data-transition>
+					<h3>Operación con puesta a nulos</h3>
+						<div>Si queremos borrar o modificar n tuplas de la relación que contiene la clave primaria referenciada, tenemos que poner a Nulo los valores de las claves ajenas de la relación que referencia</div>
+				</section>
+				<section>
+					</h3>OBJETIVOS</h3>
+					<div>Eliminar informaciòn sensible, preservar la integridad de la base de datos, cumplir con regulaciones de privacidad</div>
+				</section>
+				</section>
+				<section data-transition>
+					<h3>Ejemplo</h3>
+					<div>Al borrar una Especialidad, los Médicos que trabajan en la Especialidad eliminada y que además se encuentran en la relación Médicos, se les debe colocar el atributo Cod_Esp a Nulo. Esta opción sólo es posible si el atributo que es clave ajena permite tomar valores nulos.</div>
+				</section>
+
+				<section data-transition="zoom">
+					<h3>Operación Compuesta a Valor por Defecto</h3>
+					<h4>set defauld</h4>
+				</section>
+				<section data-transition>
+					<h3>Operación Compuesta a Valor por Defecto</h3>
+					<div> Si queremos borrar o modificar n tuplas de la relaciòn que contiene la clave primaria referenciada, es necesario poner el valor por defecto a la clave ajena de la relaciòn de referencia.</div>
+					<section>
+						</section>
+				</section>
+				<section data-transition="zoom">
+				  <h3>¡Gracias por su atención!</h3>
+				
+			</div>
+		</div>
+
+		<script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
